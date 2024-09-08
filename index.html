@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="hsymbol.png" alt="Not loaded" class="icon">
+            <ul class="ulist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="primary">
+        <div class="primarycontainer">
+            <h1>I'm Lakshmi Mythryee Kuruguntla</h1>
+            <p> I am a web developer with a solid foundation in HTML, CSS, JavaScript, PHP, andMySQL. I am able to create responsive web designs that are user-friendly andfunctional. I have experience using Git for version control and have basic knowledge of email marketing tools.</p>
+            <button id="gocontact">Contact me</button>
+        </div>
+    </section>
+    <section id="services">
+        <h1>Services</h1>
+        <div class="servicecontainer">
+            <div class="card">
+                <img src="card1.jpg" alt="not loaded">
+                <h2>Full Stack Developer</h2>
+                <p>Proficient in HTML5, CSS3, and JavaScript for creating dynamic and responsive web interfaces. Experienced in PHP for backend development and MySQL for database management. Adept at integrating frontend and backend technologies to build robust web applications.</p>
+            </div>
+            <div class="card">
+                <img src="card2.jpg" alt="not loaded">
+                <h2>Data Analyst</h2>
+                <p>proficient in data visualization, statistical analysis, and data cleaning. Skilled in using tools like Excel, SQL, and Python for data manipulation and reporting. Adept at translating complex datasets into actionable insights to drive strategic decision-making.</p>
+            </div>
+            <div class="card">
+                <img src="card3.jpg" alt="not loaded">
+                <h2>UI/UX Design</h2>
+                <p>Fundamental UI/UX Designer with hands-on experience in Figma. Knowledgeable in basic design principles, wireframing, and prototyping. Capable of creating user-friendly interfaces and collaborating on design improvements.</p>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <h1>Projects</h1>
+        <div class="projectcontainer">
+            <div class="pcard">
+                <a href="https://github.com/Mythryee/food_website-responsive-">Responsive Food Website</a>
+                <p> A responsive food website created using HTML and CSS.
+                    Features a navigation bar, home section, about section, blog section, and
+                    contact section. Includes a form for users to get in touch in the contact section</p>
+            </div>
+            <div class="pcard">
+                <a href="https://github.com/Mythryee/Gym_website-responsive-">Responsive Gym Website</a>
+                <p>  Designed and developed a responsive frontend for a Gym website using HTML
+                    and CSS
+                    Implemented a navigation bar, sections for services, and a contact form</p>
+            </div>
+            <div class="pcard">
+                <a href="https://github.com/Mythryee/LoginSystem">Authentication System</a>
+                <p>Created a login system using PHP and MySQL.
+                    Utilized prepared statements and a hash password function to prevent SQL
+                    injection attacks and ensure data safety.
+                    Directs users to the home page upon successful login, and to the login page if
+                    not logged in.</p>
+            </div>
+            <div class="pcard">
+                <a href="https://github.com/Mythryee/Weather">Weather API</a>
+                <p>A basic weather application that allows users to input the name of a city, fetch the current weather data for that city from an external API, and display the weather information on the same page</p>
+            </div>
+            <div class="pcard">
+                <a href="https://github.com/Mythryee/Crud_operations">Todo (PHP)</a>
+                <p>Add Tasks: Users can enter a task in a text input field.
+                    Delete Tasks: Each task displayed in the list has a delete button (X)
+                    Display Tasks: Retrieves and displays all tasks.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contactcontainer">
+            <h1>Contact</h1>
+            <input type="text" name="user" id="user" placeholder="Enter user name">
+            <input type="email" name="mail" id="mail" placeholder="Enter your mail">
+            <input type="password" name="pass" id="pass" placeholder="Enter password">
+            <input type="password" name="cpass" id="cpass" placeholder="Confirm password">
+            <input type="submit" value="Register">
+        </div>
+    </section>
+    <footer>
+        <p>All copyrights &copy; are reserved - 2024</p>
+    </footer>
+    <script>
+        document.querySelector('.icon').addEventListener('click', function() {
+            document.querySelector('.ulist').classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>
